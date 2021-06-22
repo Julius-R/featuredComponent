@@ -1,0 +1,41 @@
+.header
+    margin: $big-gutter 0
+    .category
+        font-weight: 300
+
+.grid
+    display: grid
+    column-gap: $gutter
+    row-gap: $gutter
+    grid-template-rows: repeat(2, 1fr)
+    grid-template-columns: repeat(4, 1fr)
+    
+    .gridItem
+        .image
+            height: 260px
+            width: 100%
+            border-radius: 10px
+            img
+                height: 100%
+                width: 100%
+                border-radius: 10px
+        .description
+            height: 35%
+            padding: $gutter 0
+            .splitter
+                display: flex
+                justify-content: space-between
+                align-items: center
+                margin-bottom: .8em
+                .name
+                    font-weight: 500
+        &:first-child
+            font-size: $gutter
+            grid-column: 1 / span 2
+            grid-row: 1 / span 2
+            .image
+                height: 600px
+            .splitter
+                .name
+                    color: #F98404
+            
